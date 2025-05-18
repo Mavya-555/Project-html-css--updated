@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cloth Your Pets</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fffaf5;
+      color: #333;
+    }
+
+    header {
+      background-color: #f4a261;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      border-bottom: 4px solid #e76f51;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .cloth {
+      background-color: #fefefe;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease;
+    }
+
+    .cloth:hover {
+      transform: scale(1.02);
+    }
+
+    .cloth img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .cloth p {
+      padding: 15px;
+      font-size: 0.95rem;
+      text-align: justify;
+    }
+
+    .rating {
+      padding: 0 15px;
+      color: #f4a261;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    .cloth button {
+      background-color: #4b87c0;
+      border: none;
+      padding: 10px;
+      margin: 0 15px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .cloth button a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .cloth button:hover {
+      background-color: #074e81;
+    }
+    .cloth>img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover; /* Ensures images fill and crop nicely */
+  border-bottom: 1px solid #ddd;
+}.home-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.home-button>a {
+  text-decoration: none;
+  background-color: #2a9d8f;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.home-button a:hover {
+  background-color: #21867a;
+  transform: scale(1.05);
+}
+
+/* Mobile adjustment */
+@media (max-width: 600px) {
+  .home-button {
+    top: 15px;
+    left: 15px;
+  }
+
+  .home-button a {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
+}
+
+    @media (min-width: 1024px) {
+      .container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.5em;
+        padding: 15px 20px;
+      }
+
+      .cloth img {
+        height: 200px;
+      }
+
+      .cloth p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="home-button">
+    <a href="Project.html">Home</a>
+    </div>CLOTH YOUR PETS</header>
+
+  <div class="container">
+    <div class="cloth">
+      <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRAdPqKfoGM38mGNlK-3uTCVzbkjXw8Q7jEuDWaw6vROe-O0vteT9LB7uHJTX0x8t6A89IWz6kfwdt-ISB209QGzZbE1mUSS9pl2PtoIJk" alt="cloth-1">
+      <p>KUTKUT polycotton blend Small Dog Cat Bodysuit Pjs Spring Summer Autumn Dog Clothes.</p>
+      <div class="rating">⭐⭐⭐⭐</div>
+      <button><a href="https://www.amazon.in/KUTKUT-Bodysuit-Clothes-Boy-Soft-Stretchy/dp/B0CGJ42NZV" target="_blank">Buy Now</a></button>
+    </div>
+
+    <div class="cloth">
+      <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQHp5p47L7SY2UqfEj9GicucT0Bo4dw9nn_VI_VCxtYnZq-vTeSUG4S7qEouW4cOrF5YVUYmxKR7YQrnwbi0-CkZgNV0B8q1CHJYB5ms9EF6j9FEY99mdCNhg" alt="cloth-2">
+      <p>HUFT Personalised Striped Dog Dress - Blue - Only For Small Breeds.</p>
+      <div class="rating">⭐⭐⭐⭐⭐</div>
+      <button><a href="https://headsupfortails.com/products/huft-striped-doggie-dress-blue?variant=39547484864574" target="_blank">Buy Now</a></button>
+    </div>
+
+    <div class="cloth">
+      <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTVQk1pbCkDuJ_gPMEGPu3Zc7AKD9P3M-XGEbBxGCgO2DbeWP3NJVJvTb2NWUuv9CHgkCSplw0mW-CUrvHbGAwwQ7EzvYYG-HecLzVIxSZIdFodY02thxElWA" alt="cloth-3">
+      <p>Lulala Dog Hoodie Sweater Coat only for Small Dog & Cat Fleece Lined Jacket.</p>
+      <div class="rating">⭐⭐⭐</div>
+      <button><a href="https://www.amazon.in/Lulala-Dog-Hoodie-Sweater-Cardigan/dp/B0DQTJP8JX" target="_blank">Buy Now</a></button>
+    </div>
+
+    <div class="cloth">
+      <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSE0oWTNv6wf1pkXE0znWswLLV0ucnFQJ1wqVjEbwEFEauLJcR-gj44Xn9ZJV4jiR55e-d4w9AzH92Tx0L9uCY99356j2he6SZBba_amwEB" alt="cloth-4">
+      <p>KUTKUT Rainbow Print Fashion Soft Flannel Fleece Shirt for Small Puppy/Cat.</p>
+      <div class="rating">⭐⭐⭐⭐⭐</div>
+      <button><a href="https://www.amazon.in/KUTKUT-Rainbow-Fashion-Flannel-Maltese/dp/B09HNV29HZ" target="_blank">Buy Now</a></button>
+    </div>
+
+    <div class="cloth">
+      <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSNB9Sam-4sPz1gpN1-3C8sDdUptVXOvVGTiqyeBwcr1vV-FO3o6jerhqmb1S3j_E1opSAYL5Fooo3u_CG4MygmyxJZarzo" alt="cloth-5">
+      <p>Bird Costume Diaper Frog Shape Hoodie for Parrots, Parakeets, Conures.</p>
+      <div class="rating">⭐⭐⭐</div>
+      <button><a href="https://www.desertcart.in/products/235490590-bird-costume-bird-diaper-flight-suit-frog-shape-hoodie-bird-clothes" target="_blank">Buy Now</a></button>
+    </div>
+
+    <div class="cloth">
+      <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ6EsvS4Tl8nKpcG4hfqTIe6PIMyMG4DTt3g-5J2t39WzaEnbgA1yktSQU-L39_IZ7CNY-NvSNzEfYtuNWHMy8k3zzONo4mqwLos_xvfv9jU1DZ5liRAYup" alt="cloth-6">
+      <p>Petzlifeworld 2 Pcs Adjustable Birds Diaper for Parrot, Budgies, Conures, etc.</p>
+      <div class="rating">⭐⭐⭐⭐</div>
+      <button><a href="https://www.petzlifeworld.in/products/petzlifeworld-2-pcs-adjustable-birds-diaper-for-parrot-budgies" target="_blank">Buy Now</a></button>
+    </div>
+  </div>
+</body>
+</html>

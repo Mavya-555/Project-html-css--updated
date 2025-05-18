@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Toys Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fffaf5;
+      color: #333;
+    }
+
+    header {
+      background-color: #f4a261;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      border-bottom: 4px solid #e76f51;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .toys {
+      background-color: #fefefe;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease;
+    }
+
+    .toys:hover {
+      transform: scale(1.02);
+    }
+
+    .toys img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .toys p {
+      padding: 15px;
+      font-size: 0.95rem;
+      text-align: justify;
+    }
+
+    .rating {
+      padding: 0 15px;
+      color: #f4a261;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    .toys button {
+      background-color: #4b87c0;
+      border: none;
+      padding: 10px;
+      margin: 0 15px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .toys button a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .toys button:hover {
+      background-color: #074e81;
+    }
+    .toys>img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover; /* Ensures images fill and crop nicely */
+  border-bottom: 1px solid #ddd;
+}.home-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.home-button>a {
+  text-decoration: none;
+  background-color: #2a9d8f;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.home-button a:hover {
+  background-color: #21867a;
+  transform: scale(1.05);
+}
+
+/* Mobile adjustment */
+@media (max-width: 600px) {
+  .home-button {
+    top: 15px;
+    left: 15px;
+  }
+
+  .home-button a {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
+}
+
+    @media (min-width: 1024px) {
+      .container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.5em;
+        padding: 15px 20px;
+      }
+
+      .toys img {
+        height: 200px;
+      }
+
+      .toys p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="home-button">
+    <a href="Project.html">Home</a>
+    </div>TOYS FOR YOUR PETS</header>
+
+  <div class="container">
+    <div class="toys">
+      <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSw5mgF-L2LsQIvT9StNrZGDzRE4hacL_hjhKPJl4PnQVWkvvfO3pmm6XScfoz3g9BDxK4YosZJXtb2DOtstLXbxpczEXLmffMNdywI_Y-vvJ_NabfgFjQBlA" alt="toy-1">
+      <p>Agirav Tail Dog Toys + Dog Chew Toys + Puppy Teething Toys + Rope Toys + Dog Toys for Small to</p>
+      <div class="rating">⭐⭐⭐⭐</div>
+      <button><a href="https://www.amazon.in/Puppy-Teething-Medium-Washable-Cotton/dp/B09HV6RXWC?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&smid=AA6DMS20COJ0M&th=1" target="_blank">Buy Now</a></button>
+    </div>
+
+    <div class="toys">
+      <img src="https://images.meesho.com/images/products/446557936/hcem6_1200.jpg" alt="toy-2">
+      <p>Goofy Tails Hard Squeaky Rubber Chew Ball</p>
+      <div class="rating">⭐⭐⭐⭐⭐</div>
+      <button><a href="https://www.meesho.com/goofy-tails-dog-ball-dog-toys-hard-squeaky-rubber-ball-toys-for-dogs-chew-toys-for-dogs-squeaky-toys-for-dogs-ball-for-dogs-bluegreenorange/p/7dvab4" target="_blank">Buy Now</a></button>
+    </div>
+
+    <div class="toys">
+      <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQXqZ0g2DmZ2_GtUp3lHDUg9xbApnPVnn4pFoIYwyM3b3SW60d1whDvQhcU3RPCdVnbPaBXh6zjm658LU3Z2780RrD8S89dvzuYPzm36W25daiWHdqdcfAgKw" alt="toy-3">
+      <p>Qpets Premium Cat Toy Interactive Cat Toys Set of 5 Cat Teaser Wand Pet Toy for Cat Activity Fishing Rod with Mouse Natural Feathers Toys for</p>
+      <div class="rating">⭐⭐⭐</div>
+      <button><a href="https://www.amazon.in/Premium-Interactive-Activity-Fishing-Feathers/dp/B09BR683NC?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=ADYO7MG7PRT93" target="_blank">Buy Now</a></button>
+    </div>
+
+    <div class="toys">
+      <img src="https://headsupfortails.com/cdn/shop/files/TrixieWindUpMouseCatToy-7cm_AssortedColour.jpg?v=1687871100&width=823" alt="toy-4">
+      <p>Trixie Wind Up Mouse Cat Toy - 7 cm (Assorted Colour)</p>
+      <div class="rating">⭐⭐⭐⭐⭐</div>
+      <button><a href="https://headsupfortails.com/products/trixie-wind-up-mouse-cat-toy-7-cm-assorted-colour?variant=39773035102270&utm_source=Google_Ads&utm_campaign=Shopping_Catch_All&utm_content=&utm_medium=Shopping&gad_source=1&gad_campaignid=1342750688&gbraid=0AAAAADp9oXi6JSGGADe92zQagSv7qf6ju&gclid=Cj0KCQjwiqbBBhCAARIsAJSfZkZMrTbfyhDLsuE1AZkJt3eVTClwX8ehb0TK3dAZADZO_sfYOdbtvB0aApe3EALw_wcB" target="_blank">Buy Now</a></button>
+    </div>
+
+    <div class="toys">
+      <img src="https://m.media-amazon.com/images/I/819J5GTMf7L.jpg" alt="toy-5">
+      <p>LAFANGA Bundle of 8 Wooden Bird Toys, Rings, Swings, Perches Toys for Small and Medium Parrots & Birds, Budgies, Love Birds, Sun Conure, Cockatiel</p>
+      <div class="rating">⭐⭐⭐</div>
+      <button><a href="https://www.amazon.in/LAFANGA-Perches-Parrots-Budgies-Cockatiel/dp/B0CMQR23DY" target="_blank">Buy Now</a></button>
+    </div>
+
+    <div class="toys">
+      <img src="https://m.media-amazon.com/images/I/41ir+m9tDkL._SY300_SX300_.jpg" alt="toy-6">
+      <p>The Pets Company Bird Interactive Bell Ball, Bird Toy for Parakeet, Cockatiel, Budgerigar, Parrots, 1.5 Inches (Pack of 3)</p>
+      <div class="rating">⭐⭐⭐⭐</div>
+      <button><a href="https://www.amazon.in/Pets-Company-Interactive-Cockatiel-Budgerigar/dp/B0BN3B5Z18/ref=asc_df_B0BN3B5Z18?mcid=02628c0faf2936df836ecc8dee3336ba&tag=googleshopdes-21&linkCode=df0&hvadid=709882031890&hvpos=&hvnetw=g&hvrand=11555522222961478273&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9147595&hvtargid=pla-1930464694246&psc=1&gad_source=1" target="_blank">Buy Now</a></button>
+    </div>
+  </div>
+</body>
+</html>

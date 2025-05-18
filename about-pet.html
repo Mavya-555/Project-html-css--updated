@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Pet</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background-color: #fdfdfd;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+     header {
+  background-color: #f4a261;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  border-bottom: 4px solid #e76f51;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* ensures it stays on top */
+}
+
+
+    .head {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px;
+      background-color: #fff3e0;
+      flex-wrap: wrap;
+    }
+
+    .head img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .content h2 {
+      margin-top: 30px;
+      color: #264653;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .toc {
+      text-align: center;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .toc a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #e76f51;
+      font-weight: bold;
+    }
+
+    .toc a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #777;
+      background-color: #f1f1f1;
+      margin-top: 40px;
+    }
+    .home-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.home-button>a {
+  text-decoration: none;
+  background-color: #2a9d8f;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.home-button a:hover {
+  background-color: #21867a;
+  transform: scale(1.05);
+}
+
+/* Mobile adjustment */
+@media (max-width: 600px) {
+  .home-button {
+    top: 15px;
+    left: 15px;
+  }
+
+  .home-button a {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
+}
+
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      header {
+        font-size: 1.5em;
+        padding: 15px 20px;
+      }
+
+      .head {
+        flex-direction: column;
+        padding: 20px 10px;
+        gap: 15px;
+      }
+
+      .head img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto;
+      }
+
+      .content {
+        margin: 20px 15px;
+        padding: 15px;
+        max-width: 100%;
+      }
+
+      .toc {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 10px;
+      }
+
+      .toc a {
+        margin: 5px 10px;
+        font-size: 1.1em;
+      }
+    }
+
+    @media (max-width: 400px) {
+      body {
+        font-size: 14px;
+      }
+
+      header {
+        font-size: 1.2em;
+      }
+
+      .toc a {
+        font-size: 1em;
+        margin: 5px 6px;
+      }
+
+      ul li {
+        margin-bottom: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="home-button">
+      <a href="Project.html">Home</a>
+    </div>KNOW ABOUT YOUR PET</header>
+
+  <div class="head">
+    <img src="https://i.pinimg.com/736x/7f/e8/13/7fe813f145b7973e4fb594c9cfcdb78b.jpg" alt="Dog">
+    <img src="https://www.rd.com/wp-content/uploads/2024/06/50-Photos-of-Cute-Kittens-That-Will-Make-You-Melt_GettyImages-187144066_SSedit_FT.jpg?fit=700,1024" alt="Cat">
+    <img src="https://www.tracyvets.com/files/Parakeets.jpeg" alt="Birds">
+  </div>
+
+  <!-- Table of Contents -->
+  <div class="toc">
+    <a href="#dogs">Dogs</a> |
+    <a href="#cats">Cats</a> |
+    <a href="#birds">Birds</a>
+  </div>
+
+  <div class="content">
+    <!-- Dogs -->
+    <h2 id="dogs">Dogs</h2>
+    <p>
+      Dogs are social, loyal, and intelligent animals. They thrive on companionship, exercise, and training. Dogs have been bred into hundreds of breeds, each with its own personality and care needs.
+    </p>
+    <ul>
+      <li><strong>Behavior:</strong> Loyal, pack-oriented, eager to please. Many breeds are energetic and love routines.</li>
+      <li><strong>Training:</strong> Start early with basic commands like sit, stay, and come. Use positive reinforcement.</li>
+      <li><strong>Care:</strong> Regular walks, playtime, grooming, vaccinations, and a balanced diet are essential.</li>
+      <li><strong>Exercise:</strong> Needs vary by breed. Active dogs like retrievers require more daily activity.</li>
+      <li><strong>Health:</strong> Watch for signs of illness like changes in appetite or energy levels. Annual vet visits are a must.</li>
+      <li><strong>Fun Fact:</strong> Dogs can learn over 100 words and recognize human emotions.</li>
+    </ul>
+
+    <!-- Cats -->
+    <h2 id="cats">Cats</h2>
+    <p>
+      Cats are independent yet affectionate pets. They are known for their agility, hunting skills, and cleanliness. While they love naps and solitude, many enjoy interactive play and cuddling.
+    </p>
+    <ul>
+      <li><strong>Behavior:</strong> Curious, territorial, and often enjoy climbing and perching.</li>
+      <li><strong>Training:</strong> Can be trained to use a litter box, scratching posts, and respond to names.</li>
+      <li><strong>Care:</strong> Clean litter daily, brush regularly, provide scratching areas, and ensure indoor safety.</li>
+      <li><strong>Exercise:</strong> Encourage play using toys, lasers, and climbing trees indoors.</li>
+      <li><strong>Health:</strong> Regular vet visits, dental care, and proper flea/tick prevention are important.</li>
+      <li><strong>Fun Fact:</strong> A cat can jump up to six times its body length in one leap.</li>
+    </ul>
+
+    <!-- Birds -->
+    <h2 id="birds">Birds</h2>
+    <p>
+      Birds make vibrant and social pets. From small finches to talking parrots, each species has unique needs. They require clean environments, attention, and stimulation to stay healthy.
+    </p>
+    <ul>
+      <li><strong>Behavior:</strong> Social, love vocalizing. Some mimic sounds and learn tricks.</li>
+      <li><strong>Training:</strong> Use repetition and gentle commands for basic skills. Reward with favorite treats.</li>
+      <li><strong>Care:</strong> Clean cages often, provide fresh food/water, perches, and mental stimulation.</li>
+      <li><strong>Exercise:</strong> Allow supervised out-of-cage time for flying or climbing.</li>
+      <li><strong>Health:</strong> Look for fluffed feathers, lethargy, or changes in appetite as signs of illness.</li>
+      <li><strong>Fun Fact:</strong> Some parrots can live more than 60 years and develop large vocabularies.</li>
+    </ul>
+  </div>
+
+  <footer>
+    &copy; Know Your Pet. All rights reserved.
+  </footer>
+
+</body>
+</html>

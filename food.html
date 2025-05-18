@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Food Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fffaf5;
+      color: #333;
+    }
+
+    header {
+      background-color: #f4a261;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      border-bottom: 4px solid #e76f51;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .food {
+      background-color: #fefefe;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease;
+    }
+
+    .food:hover {
+      transform: scale(1.02);
+    }
+
+    .food img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .food p {
+      padding: 15px;
+      font-size: 0.95rem;
+      text-align: justify;
+    }
+
+    .rating {
+      padding: 0 15px;
+      color: #f4a261;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    .food button {
+      background-color: #4b87c0;
+      border: none;
+      padding: 10px;
+      margin: 0 15px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .food button a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .food button:hover {
+      background-color: #074e81;
+    }
+    .food>img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover; /* Ensures images fill and crop nicely */
+  border-bottom: 1px solid #ddd;
+}.home-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.home-button>a {
+  text-decoration: none;
+  background-color: #2a9d8f;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.home-button a:hover {
+  background-color: #21867a;
+  transform: scale(1.05);
+}
+
+/* Mobile adjustment */
+@media (max-width: 600px) {
+  .home-button {
+    top: 15px;
+    left: 15px;
+  }
+
+  .home-button a {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
+}
+
+    @media (min-width: 1024px) {
+      .container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.5em;
+        padding: 15px 20px;
+      }
+
+      .food img {
+        height: 200px;
+      }
+
+      .food p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="home-button">
+    <a href="Project.html">Home</a>
+    </div>FOOD FOR YOUR PETS</header>
+
+  <div class="container">
+    <div class="food">
+      <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRFaJNLEFRJt9GmPRPWfdNtIbU060qqwmaaGlaG9KLqZReEMPG5zHeLnMYUdfWhaDEi0y12L4nbcRcL-U_NVpeGj4Z2q51N2nmfKjH6SMyIRj3E26alh5H2tQ" alt="food-1">
+      <p>Drools Dry Dog Food Adult, Chicken and Egg Flavor 1.2Kg Pack</p>
+      <div class="rating">⭐⭐⭐⭐</div>
+      <button><a href="https://www.amazon.in/Drools-Adult-Chicken-Flavor-1-2Kg/dp/B0CT34XGQM?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&smid=A2AL6IVND0I91F&th=1" target="_blank">Buy Now</a></button>
+    </div>
+
+    <div class="food">
+      <img src="https://headsupfortails.com/cdn/shop/files/8906002482832_10kg.jpg?v=1744608851" alt="food">
+      <p>Pedigree Adult Dry Dog Food (High Protein Variant), Chicken, Egg & Rice Flavour, 10kg Pack</p>
+      <div class="rating">⭐⭐⭐⭐⭐</div>
+      <button><a href="https://www.amazon.in/dp/B07BWVBZXQ/ref=sspa_dk_detail_1?pd_rd_i=B07BWVBZXQ&pd_rd_w=aQV6q&content-id=amzn1.sym.9f1cb690-f0b7-44de-b6ff-1bad1e37d3f0&pf_rd_p=9f1cb690-f0b7-44de-b6ff-1bad1e37d3f0&pf_rd_r=EQNRQSZVXFVVQ738BCN2&pd_rd_wg=Q3vTN&pd_rd_r=587ea5da-84f8-4c8e-9500-fd9a9da358fd&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&th=1" target="_blank">Buy Now</a></button>
+    </div>
+
+    <div class="food">
+      <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS5RiAhMkePtgzD9iVcBLKzSILs9lPq67bzzJxx6rGUs2jZeVRIxnAoa_qdS2NOdM85M1x4buZ9b8o3m2glyCPpGDrk9kgHpdQobDZfD_jkrbwCYeCMxmyG5g" alt="food-3">
+      <p>Purepet Ocean Fish Adult Dry Cat Food</p>
+      <div class="rating">⭐⭐⭐</div>
+      <button><a href="https://www.amazon.in/Purepet-Ocean-Fish-Adult-Food/dp/B0BMGP89P1?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&smid=A2AL6IVND0I91F&gPromoCode=sns_in_en_5_2025Q1&th=1" target="_blank">Buy Now</a></button>
+    </div>
+
+    <div class="food">
+      <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRTPEs8u3a16pkhmd0S47XhaXDYWVGNoRQjd_4887MKT-Ca058BNHVf8U38qQtSRBkQz7OW-OwLwcNKmbnyT0hoHBuLayyMApUQHcy0GnFYwPgEpNTlnfwvAKs" alt="food-4">
+      <p>Whiskas Ocean Fish Adult Dry Cat Food</p>
+      <div class="rating">⭐⭐⭐⭐⭐</div>
+      <button><a href="https://www.swiggy.com/stores/instamart/p/whiskas-ocean-fish-flavour-adult-dry-cat-food-R9MQA6M0R3" target="_blank">Buy Now</a></button>
+    </div>
+
+    <div class="food">
+      <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQkgP2j9kj3d-IA-2h62hK3luZzPO9DYF22Wz48hqhtUBk8GoScJR0f22HrTHBBlWezEMc4yFq_EE6ieHG9Hd_UUIxGo3RlavAPuEW5imPWT7AcXNuJ4CLeiQ" alt="food-5">
+      <p>Petslife Hand Feeding Formula Bird Food</p>
+      <div class="rating">⭐⭐⭐</div>
+      <button><a href="https://www.flipkart.com/petslife-hand-feeding-0-25-kg-dry-new-born-bird-food/p/itm41bd862177bf5?pid=PFDGNRD4THP5TS3G&lid=LSTPFDGNRD4THP5TS3GUAX3HI&marketplace=FLIPKART&cmpid=content_pet-food_8965229628_gmc" target="_blank">Buy Now</a></button>
+    </div>
+
+    <div class="food">
+      <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ5WA3eC8Opa3z1Pu1no-IqcLhtzIaeBkt4PiYIYEzFuZFtW-n-8DKgcw_cZRSY54Gv-XdPQr5sfwa3U_0XcXfc-RBABYGW_-3-z1Fa63mJStpSGaC-sxbA_g" alt="food-6">
+      <p>Bird Food, Bird Feed for Pigeons and Doves - 450 Grams Seed Blend of 10 Grains and Nuts Enriched with Cuttlefish Bone Grits</p>
+      <div class="rating">⭐⭐⭐⭐</div>
+      <button><a href="https://www.amazon.in/Bird-Food-Feed-Pigeon-Dove/dp/B09NP58HP7?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&smid=ARPPX12NDNJYU&th=1" target="_blank">Buy Now</a></button>
+    </div>
+  </div>
+</body>
+</html>
